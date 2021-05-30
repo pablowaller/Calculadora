@@ -1,0 +1,58 @@
+body {
+	background-image: url('math.jpg');
+}
+
+.calculadora-grilla {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	border: 1px black;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+
+.calculadora-grilla > button {
+	cursor: pointer;
+	color: white;
+	font-size: 2rem;
+	border: 1px solid rgb(2, 2, 27);
+	outline: none;
+	background-color: rgb(17, 17, 11);
+}
+
+button:hover {
+	background-color: rgb(99, 99, 99);
+}
+
+#AC {
+	background-image: linear-gradient(to top, #f80b17, #bb1217, #ad060b, #a80810, #f80b17);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.output {
+	grid-column: 1 / -1;
+	background-color: rgb(48, 48, 48);
+	border: 2px solid rgb(17, 17, 17);
+	border-bottom: transparent;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.output .display {
+	color: black;
+	font-size: 1.85rem;
+	justify-content: center;
+	text-align: right;
+	cursor: not-allowed;
+}
+
+.display {
+	height: 30px;
+}
