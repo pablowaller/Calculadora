@@ -1,6 +1,7 @@
 body {
 	background-image: url('math.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .calculadora-grilla {
