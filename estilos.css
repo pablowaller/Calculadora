@@ -12,11 +12,6 @@ body {
 	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-#pantalla {
-	padding-left: 1%;
-}
-
-
 .calculadora-grilla > button {
 	cursor: pointer;
 	color: white;
